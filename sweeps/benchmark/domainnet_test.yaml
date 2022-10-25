@@ -1,0 +1,57 @@
+name: DomainNet noise_ratio test
+project: FedRBN_release
+command:
+- ${interpreter}
+- -m
+- ${program}
+- "--data=DomainNet"
+- "--model=alexnet"
+- "--batch=32"
+- "--rounds=600"
+- "--pd_nuser=5"
+- "--val_ratio=0.6"
+#- "--percent=0.6"
+#- "--lr=0.02"  # NOTE only for FedMeta
+- "--test"
+- ${args}
+method: grid
+metric:
+  goal: maximize
+  name: test_acc
+parameters:
+  seed:
+    values:
+      - 1
+      - 2
+      - 3
+  mode:
+    values:
+    - FedRBN
+#    - FedBN
+#    - FedRAvg
+#    - FedAvg
+#    - FedProx
+#    - FedMeta
+#    - FedRAvg
+  n_noise_domain:
+    values:
+#      - 1
+      - 6  # NOTE only used for full evaluation
+  partition_mode:
+    values:
+      - uni
+#      - dir
+  noise_ratio:
+    values:
+      - 0.2
+#      - 1.
+  pnc:  # pnc
+    values:
+#      - 0.1
+      - 0.5
+      # - 1.
+  test_noise:
+    values:
+      - none  # for Standard Accuracy (SA)
+      - LinfPGD  # for Robust Accuracy (RA)
+program: fedat
