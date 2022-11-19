@@ -1,7 +1,9 @@
 FedRBN for Federated Robustness Propagation
 ===========================================
 
-PyTorch implementation for paper: [Federated Robustness Propagation: Sharing Robustness in Heterogeneous Federated Learning](https://arxiv.org/abs/2106.10196). The codes are greatly based on [FedBN repo](https://github.com/med-air/FedBN.git). Our code with experiments can be downloaded from [FedRBN@GitHub](https://github.com/illidanlab/FedRBN).
+PyTorch implementation for paper: "Federated Robustness Propagation: Sharing Robustness in Heterogeneous Federated Learning", [Junyuan Hong](https://jyhong.gitlab.io/), [Haotao Wang](https://htwang14.github.io/), [Zhangyang Wang](https://vita-group.github.io/) and [Jiayu Zhou](https://jiayuzhou.github.io/).
+
+[paper](https://arxiv.org/abs/2106.10196) / [code](https://github.com/illidanlab/FedRBN), [[slides]()], [[poster]()].
 
 **TL;DR** As AT is computation-intensive and users in FL have heterogeneous computation resources, *Federated Robustness Propagation (FRP)* aims to share the AT users' robustness with ST users.
 We propose the first simple yet effective algorithm to conduct FRP.
@@ -50,6 +52,9 @@ wandb sweep sweeps/benchmark/digits.yaml  # train
 wandb sweep sweeps/benchmark/digits_test.yaml  # test
 ```
 
+## Acknowledgement
+
+The codes are greatly based on [FedBN repo](https://github.com/med-air/FedBN.git).
 
 ## Citation
 
