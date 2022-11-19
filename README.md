@@ -1,7 +1,7 @@
 FedRBN for Federated Robustness Propagation
 ===========================================
 
-PyTorch implementation for paper: "Federated Robustness Propagation: Sharing Robustness in Heterogeneous Federated Learning", [Junyuan Hong](https://jyhong.gitlab.io/), [Haotao Wang](https://htwang14.github.io/), [Zhangyang Wang](https://vita-group.github.io/) and [Jiayu Zhou](https://jiayuzhou.github.io/).
+PyTorch implementation for paper: "Federated Robustness Propagation: Sharing Robustness in Heterogeneous Federated Learning", [Junyuan Hong](https://jyhong.gitlab.io/), [Haotao Wang](https://htwang14.github.io/), [Zhangyang Wang](https://vita-group.github.io/) and [Jiayu Zhou](https://jiayuzhou.github.io/). *AAAI'23*
 
 [paper](https://arxiv.org/abs/2106.10196) / [code](https://github.com/illidanlab/FedRBN), [[slides]()], [[poster]()].
 
