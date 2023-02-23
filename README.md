@@ -59,10 +59,10 @@ The codes are greatly based on [FedBN repo](https://github.com/med-air/FedBN.git
 ## Citation
 
 ```bibtex
-@article{hong2021fedrbn,
+@inproceedings{hong2023fedrbn,
   title={Federated robustness propagation: Sharing adversarial robustness in federated learning},
   author={Hong, Junyuan and Wang, Haotao and Wang, Zhangyang and Zhou, Jiayu},
-  journal={arXiv preprint arXiv:2106.10196},
-  year={2021}
+  booktitle={AAAI},
+  year={2023}
 }
 ```
